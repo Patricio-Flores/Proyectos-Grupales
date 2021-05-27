@@ -10,5 +10,5 @@ package com.mycompany.trabajo_en_grupo;
  * @author leski
  */
 public class Cuadrado {
-    
+    //Cuadrado
 }
