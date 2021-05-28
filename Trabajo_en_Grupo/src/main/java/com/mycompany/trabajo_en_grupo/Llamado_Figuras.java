@@ -24,25 +24,78 @@ public class Llamado_Figuras {
     public static void main(String[] args) {
        // Figuras
         double Diagonalm=0,diagonalm=0,lado=0,b=0,bmayor=0, bmenor=0,apotema=0,num=0,altura=0,radio=0,pi=0,diametro=0;
+        int opcion=0;
+        
+        
         Scanner sc=new Scanner (System.in);
-        System.out.println("ingrese lado");
-        lado=sc.nextDouble();
-        System.out.println("ingrese diagonal Mayor");
-        Diagonalm=sc.nextDouble();
-        System.out.println("ingrese Diagonal Menor");
-        diagonalm=sc.nextDouble();
+        System.out.println("selecciones la figura");
+        opcion=sc.nextInt();
+        switch(opcion){
+            case 1:
+                System.out.println("ingrese el lado ");
+                lado=sc.nextDouble();
+                Cuadrado c=new Cuadrado(lado);
+                break;
+            case 2:
+                // Rectangulo re=new Rectangulo(b,a);
+                break;
+            case 3:
+                System.out.println("Ingrese la base: ");
+                b=sc.nextDouble();
+                System.out.println("Ingrese la altura: ");
+                altura=sc.nextDouble();
+                System.out.println("ingrese el lado ");
+                lado=sc.nextDouble();
+                triangulo t = new triangulo(b,altura,lado);
+                break;
+            case 4:
+                System.out.println("Ingrese la diagonal mayor: ");
+                Diagonalm=sc.nextDouble();
+                System.out.println("Ingrese la diagonal menor: ");
+                diagonalm=sc.nextDouble();
+                System.out.println("ingrese el lado ");
+                lado=sc.nextDouble();
+                 Rombo r = new Rombo (Diagonalm,diagonalm,lado);
+                break;
+            case 5:
+                 System.out.println("Ingrese la base: ");
+                b=sc.nextDouble();
+                System.out.println("Ingrese la altura: ");
+                altura=sc.nextDouble();
+                ROMBOIDE rom=new ROMBOIDE(b,altura);
+                break;
+            case 6:
+                System.out.println("ingrese el lado ");
+                lado=sc.nextDouble();
+                 System.out.println("Ingrese la base: ");
+                b=sc.nextDouble();
+                System.out.println("Ingrese la altura: ");
+                altura=sc.nextDouble();
+                System.out.println("Ingrese la base mayor: ");
+                bmayor=sc.nextDouble();
+                System.out.println("Ingrese la base menor: ");
+                bmenor=sc.nextDouble();
+                Trapecio tr = new Trapecio (lado,b,altura,bmayor,bmenor);
+                break;
+            case 7:
+                System.out.println("Ingrese el diametro: ");
+                diametro=sc.nextDouble();
+                System.out.println("Ingrese el radio: ");
+                radio=sc.nextDouble();
+                 Circulo cir=new Circulo(diametro,radio,pi);
+                break;
+            case 8:
+                System.out.println("ingrese el lado ");
+                lado=sc.nextDouble();
+                System.out.println("Ingrese el apotema: ");
+                apotema=sc.nextDouble();
+                System.out.println("Ingrse el numero de lados: ");
+                num=sc.nextDouble();
+                  poligono po=new poligono(lado,apotema,num);
+                break;
+        }
         
-        Cuadrado c=new Cuadrado(lado);
-       // Rectangulo re=new Rectangulo(b,a);
-        triangulo t = new triangulo(b,altura,lado);
-        Rombo r = new Rombo (Diagonalm,diagonalm,lado);
-        ROMBOIDE rom=new ROMBOIDE(b,altura);
-        Trapecio tr = new Trapecio (lado,b,altura,bmayor,bmenor);
-        Circulo cir=new Circulo(diametro,radio,pi);
-        poligono po=new poligono(lado,apotema,num);
-        
-        System.out.println("EL AREA ES "+r.area());
-        System.out.println("EL PERIMETRO ES "+r.perimetro());
+       
     }
     
 }
