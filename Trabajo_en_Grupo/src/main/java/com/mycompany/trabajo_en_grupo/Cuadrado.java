@@ -11,4 +11,16 @@ package com.mycompany.trabajo_en_grupo;
  */
 public class Cuadrado {
     
+     private double lado;
+   
+    public Cuadrado(double l){
+       this.lado =l;
+    }
+   public double area(){
+       return this.lado * this.lado;
+   }
+   
+   public double perimetro(){
+       return this.lado+this.lado+this.lado+this.lado;
+   }
 }
