@@ -1,24 +1,24 @@
 
 package com.mycompany.trabajo_en_grupo;
-import java.util.Scanner;
-import javax.swing.JOptionPane;
 
 
 public class Trapecio {
-    public static double lado, base, altura, bmayor, bmenor;
-    public static void datosTrapecio() {
+private double altura;
+private double baseMayor;
+private double baseMenor;
+private double lado;
 
-        altura = Double.parseDouble(JOptionPane.showInputDialog("Ingrese la altura de trapecio  "));
-        bmayor = Double.parseDouble(JOptionPane.showInputDialog("Ingrese la base mayor de trapecio "));
-        bmenor = Double.parseDouble(JOptionPane.showInputDialog("Ingrese la base menor de trapecio  "));
-        lado = Double.parseDouble(JOptionPane.showInputDialog("Ingrese el lado de trapecio  "));
-    }
-
-    public static void areatrapecio() {
-        JOptionPane.showMessageDialog(null, "El área de trapecio es :" + ((altura * (bmayor * bmenor)) / 2));
-    }
-
-    public static void perimetrotrapecio() {
-        JOptionPane.showMessageDialog(null, "el perímetro del trapecio es :" + (bmayor + bmenor + lado + lado));
-    }
+public Trapecio(double a, double bM, double bm, double lad){
+    this.altura = a;
+    this.baseMayor = bM;
+    this.baseMenor = bm;
+    this.lado = lad; 
 }
+    
+        public double area(){
+    return (this.altura*(this.baseMayor+this.baseMenor))/2;
+}
+public double perimetro(){
+    return this.baseMayor+this.baseMenor+this.lado+this.lado;
+}
+}  
