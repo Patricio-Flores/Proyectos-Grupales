@@ -19,7 +19,7 @@ public class Llamado_Figuras {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-       
+       // Figuras
         double D=0,d=0,l=0,b=0,a=0;
         Scanner sc=new Scanner (System.in);
         System.out.println("ingrese lado");
