@@ -23,21 +23,24 @@ public class Llamado_Figuras {
      */
     public static void main(String[] args) {
        // Figuras
-        double D=0,d=0,l=0,b=0,a=0, bmayor=0, bmenor=0,apotema=0,num=0,altura=0;
+        double Diagonalm=0,diagonalm=0,lado=0,b=0,bmayor=0, bmenor=0,apotema=0,num=0,altura=0,radio=0,pi=0,diametro=0;
         Scanner sc=new Scanner (System.in);
         System.out.println("ingrese lado");
-        l=sc.nextDouble();
+        lado=sc.nextDouble();
         System.out.println("ingrese diagonal Mayor");
-        D=sc.nextDouble();
+        Diagonalm=sc.nextDouble();
         System.out.println("ingrese Diagonal Menor");
-        d=sc.nextDouble();
+        diagonalm=sc.nextDouble();
         
-        Rectangulo re=new Rectangulo(b,altura);
-        triangulo t = new triangulo(b,a,l);
-        Rombo r = new Rombo (D,d,l);
-       // Trapecio tr = new Trapecio (altura,bmayor,bmenor,l);
-        poligono po=new poligono(l,apotema,num)
-                ;
+        Cuadrado c=new Cuadrado(lado);
+       // Rectangulo re=new Rectangulo(b,a);
+        triangulo t = new triangulo(b,altura,lado);
+        Rombo r = new Rombo (Diagonalm,diagonalm,lado);
+        ROMBOIDE rom=new ROMBOIDE(b,altura);
+        Trapecio tr = new Trapecio (lado,b,altura,bmayor,bmenor);
+        Circulo cir=new Circulo(diametro,radio,pi);
+        poligono po=new poligono(lado,apotema,num);
+        
         System.out.println("EL AREA ES "+r.area());
         System.out.println("EL PERIMETRO ES "+r.perimetro());
     }
