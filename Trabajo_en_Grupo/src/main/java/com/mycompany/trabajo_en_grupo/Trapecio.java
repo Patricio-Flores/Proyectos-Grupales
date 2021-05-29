@@ -17,11 +17,11 @@ public Trapecio(double a, double bM, double bm, double lad){
 
     }
 
-   /* public double perimetro() {
-        return this.bmayor + this.bmenor + this.lado + this.lado;
+   public double perimetro() {
+        return this.baseMayor + this.baseMenor + this.lado + this.lado;
     }
 
     public double area() {
-        return (this.altura * (this.bmayor * this.bmenor)) / 2;
-    }*/
+        return (this.altura * (this.baseMayor * this.baseMenor)) / 2;
+    }
 }
