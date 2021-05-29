@@ -17,6 +17,6 @@ public class triangulo {
         return (this.base *this.altura)/2;
     }
     public double perimetro(){
-        return this.lado * 4 ;
+        return this.lado * 3 ;
     }
 }
