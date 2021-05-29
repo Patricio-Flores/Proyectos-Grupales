@@ -56,8 +56,8 @@ public class Llamado_Figuras {
                 System.out.println("Ingrese la altura: ");
                 altura=sc.nextDouble();
                 Rectangulo re=new Rectangulo(b,altura);
-                System.out.println("El area del Rectangulo es: "+re);
-                System.out.println("El Perimetro del Rectangulo es: "+re);
+                System.out.println("El area del Rectangulo es: "+re.area());
+                System.out.println("El Perimetro del Rectangulo es: "+re.perimetro());
                 break;
             case 3:
                 System.out.println("Ingrese la base: ");
@@ -101,7 +101,7 @@ public class Llamado_Figuras {
                 bmayor=sc.nextDouble();
                 System.out.println("Ingrese la base menor: ");
                 bmenor=sc.nextDouble();
-                Trapecio tr = new Trapecio (lado,b,altura,bmayor,bmenor);
+                Trapecio tr = new Trapecio (altura,bmayor,bmenor,lado);
                 System.out.println("El area del Trapecio es: "+tr.area());
                 System.out.println("El area del Trapecio es: "+tr.perimetro());
                 break;
