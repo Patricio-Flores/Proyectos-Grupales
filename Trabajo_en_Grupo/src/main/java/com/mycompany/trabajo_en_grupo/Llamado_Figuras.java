@@ -51,7 +51,13 @@ public class Llamado_Figuras {
                 System.out.println("El area del cuadrado es: "+c.perimetro());
                 break;
             case 2:
-                // Rectangulo re=new Rectangulo(b,a);
+                System.out.println("Ingrese la base: ");
+                b=sc.nextDouble();
+                System.out.println("Ingrese la altura: ");
+                altura=sc.nextDouble();
+                Rectangulo re=new Rectangulo(b,altura);
+                System.out.println("El area del Rectangulo es: "+re);
+                System.out.println("El Perimetro del Rectangulo es: "+re);
                 break;
             case 3:
                 System.out.println("Ingrese la base: ");
