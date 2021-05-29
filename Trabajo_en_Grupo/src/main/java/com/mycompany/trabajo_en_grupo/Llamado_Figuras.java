@@ -6,11 +6,14 @@
 package com.mycompany.trabajo_en_grupo;
 
 import java.util.Scanner;
-import com.mycompany.trabajo_en_grupo.Rombo;
-import com.mycompany.trabajo_en_grupo.triangulo;
-import com.mycompany.trabajo_en_grupo.Trapecio;
-import com.mycompany.trabajo_en_grupo.poligono;
+import com.mycompany.trabajo_en_grupo.Cuadrado;
 import com.mycompany.trabajo_en_grupo.Rectangulo;
+import com.mycompany.trabajo_en_grupo.triangulo;
+import com.mycompany.trabajo_en_grupo.Rombo;
+import com.mycompany.trabajo_en_grupo.ROMBOIDE;
+import com.mycompany.trabajo_en_grupo.Trapecio;
+import com.mycompany.trabajo_en_grupo.Circulo;
+import com.mycompany.trabajo_en_grupo.poligono;
 
 /**
  *
@@ -23,11 +26,20 @@ public class Llamado_Figuras {
      */
     public static void main(String[] args) {
        // Figuras
-        double Diagonalm=0,diagonalm=0,lado=0,b=0,bmayor=0, bmenor=0,apotema=0,num=0,altura=0,radio=0,pi=0,diametro=0;
+        double Diagonalm=0,diagonalm=0,lado=0,b=0,bmayor=0, bmenor=0,apotema=0,num=0,altura=0,radio=0,pi=3.1416,diametro=0;
         int opcion=0;
         
         
         Scanner sc=new Scanner (System.in);
+        
+        System.out.println("1. Cuadrado");
+        System.out.println("2. Rectangulo");
+        System.out.println("3. Tringulo");
+        System.out.println("4. Rombo");
+        System.out.println("5. Romboide");
+        System.out.println("6. Trapecio");
+        System.out.println("7. Circulo");
+        System.out.println("8. Poligono");
         System.out.println("selecciones la figura");
         opcion=sc.nextInt();
         switch(opcion){
@@ -35,6 +47,8 @@ public class Llamado_Figuras {
                 System.out.println("ingrese el lado ");
                 lado=sc.nextDouble();
                 Cuadrado c=new Cuadrado(lado);
+                System.out.println("El area del cuadrado es: "+c.area());
+                System.out.println("El area del cuadrado es: "+c.perimetro());
                 break;
             case 2:
                 // Rectangulo re=new Rectangulo(b,a);
@@ -47,6 +61,8 @@ public class Llamado_Figuras {
                 System.out.println("ingrese el lado ");
                 lado=sc.nextDouble();
                 triangulo t = new triangulo(b,altura,lado);
+                System.out.println("El area del Triangulo es: "+t.area());
+                System.out.println("El area del Triangulo: "+t.perimetro());
                 break;
             case 4:
                 System.out.println("Ingrese la diagonal mayor: ");
@@ -56,6 +72,8 @@ public class Llamado_Figuras {
                 System.out.println("ingrese el lado ");
                 lado=sc.nextDouble();
                  Rombo r = new Rombo (Diagonalm,diagonalm,lado);
+                 System.out.println("El area del Rombo es: "+r.area());
+                System.out.println("El area del Rombo es: "+r.perimetro());
                 break;
             case 5:
                  System.out.println("Ingrese la base: ");
@@ -63,6 +81,8 @@ public class Llamado_Figuras {
                 System.out.println("Ingrese la altura: ");
                 altura=sc.nextDouble();
                 ROMBOIDE rom=new ROMBOIDE(b,altura);
+                System.out.println("El area del Romboide es: "+rom.area());
+                System.out.println("El area del Romboide es: "+rom.perimetro());
                 break;
             case 6:
                 System.out.println("ingrese el lado ");
@@ -76,6 +96,8 @@ public class Llamado_Figuras {
                 System.out.println("Ingrese la base menor: ");
                 bmenor=sc.nextDouble();
                 Trapecio tr = new Trapecio (lado,b,altura,bmayor,bmenor);
+                System.out.println("El area del Trapecio es: "+tr.area());
+                System.out.println("El area del Trapecio es: "+tr.perimetro());
                 break;
             case 7:
                 System.out.println("Ingrese el diametro: ");
@@ -83,6 +105,8 @@ public class Llamado_Figuras {
                 System.out.println("Ingrese el radio: ");
                 radio=sc.nextDouble();
                  Circulo cir=new Circulo(diametro,radio,pi);
+                 System.out.println("El area del Circulo es: "+cir.area());
+                System.out.println("El area del Circulo es: "+cir.perimetro());
                 break;
             case 8:
                 System.out.println("ingrese el lado ");
@@ -92,6 +116,8 @@ public class Llamado_Figuras {
                 System.out.println("Ingrse el numero de lados: ");
                 num=sc.nextDouble();
                   poligono po=new poligono(lado,apotema,num);
+                  System.out.println("El area del Poligono es: "+po.area());
+                System.out.println("El area del Poligono es: "+po.perimetro());
                 break;
         }
         
