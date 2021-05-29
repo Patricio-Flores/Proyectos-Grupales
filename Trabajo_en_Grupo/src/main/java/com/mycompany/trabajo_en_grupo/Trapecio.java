@@ -8,20 +8,20 @@ private double baseMenor;
 private double lado;
 
 
-public Trapecio(double a, double bM, double bm, double lad){
+public Trapecio(double a, double bM, double bm, double lado){
     this.altura = a;
     this.baseMayor = bM;
     this.baseMenor = bm;
-    this.lado = lad; 
+    this.lado = lado; 
    
 
     }
 
-   public double perimetro() {
-        return this.baseMayor + this.baseMenor + this.lado + this.lado;
+    public double perimetro() {
+        return this.baseMayor + this.baseMayor + this.lado + this.lado;
     }
 
     public double area() {
-        return (this.altura * (this.baseMayor * this.baseMenor)) / 2;
+        return (this.altura * (this.baseMenor * this.baseMenor)) / 2;
     }
 }
