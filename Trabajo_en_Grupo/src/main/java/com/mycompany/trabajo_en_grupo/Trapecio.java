@@ -1,4 +1,3 @@
-
 package com.mycompany.trabajo_en_grupo;
 
 
@@ -8,17 +7,21 @@ private double baseMayor;
 private double baseMenor;
 private double lado;
 
+
 public Trapecio(double a, double bM, double bm, double lad){
     this.altura = a;
     this.baseMayor = bM;
     this.baseMenor = bm;
     this.lado = lad; 
+   
+
+    }
+
+   /* public double perimetro() {
+        return this.bmayor + this.bmenor + this.lado + this.lado;
+    }
+
+    public double area() {
+        return (this.altura * (this.bmayor * this.bmenor)) / 2;
+    }*/
 }
-    
-        public double area(){
-    return (this.altura*(this.baseMayor+this.baseMenor))/2;
-}
-public double perimetro(){
-    return this.baseMayor+this.baseMenor+this.lado+this.lado;
-}
-}  

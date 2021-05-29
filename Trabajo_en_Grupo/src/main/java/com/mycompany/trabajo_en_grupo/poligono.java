@@ -6,7 +6,7 @@ public class poligono {
         private double apotema;
     private double numerol;
     private double lado ; 
-    
+    private double perimetro;
     public poligono(double ap, double num, double l){
         this.apotema = ap;
         this.numerol =num;
@@ -14,10 +14,12 @@ public class poligono {
         
     }
     public double perimetro(){
+        this.perimetro = this.lado *this.numerol;
         return this.lado *this.numerol;
+        
     }
     public double area(){
-        return ((this.lado*this.numerol)*this.apotema)/2;
+        return ((this.perimetro)*this.apotema)/2;
     }
     
 }
