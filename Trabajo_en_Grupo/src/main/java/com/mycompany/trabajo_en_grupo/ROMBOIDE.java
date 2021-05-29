@@ -11,10 +11,10 @@ public ROMBOIDE(double b, double h){
     this.altura =h;
 }
 public double area(){
-    return this.base*altura;
+    return this.base*this.altura;
 }
 public double perimetro(){
-    return this.base+base+altura+altura;
+    return this.base+this.base+this.altura+this.altura;
 }
 }
 
