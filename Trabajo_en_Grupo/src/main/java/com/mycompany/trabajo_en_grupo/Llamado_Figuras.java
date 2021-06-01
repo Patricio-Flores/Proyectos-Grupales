@@ -21,6 +21,7 @@ import com.mycompany.trabajo_en_grupo.poligono;
  */
 public class Llamado_Figuras {
 
+    
     /**
      * @param args the command line arguments
      */
@@ -31,7 +32,7 @@ public class Llamado_Figuras {
         
         
         Scanner sc=new Scanner (System.in);
-        
+                try{
         System.out.println("1. Cuadrado");
         System.out.println("2. Rectangulo");
         System.out.println("3. Tringulo");
@@ -127,7 +128,27 @@ public class Llamado_Figuras {
                 break;
         }
         
-       
+       }catch(ArithmeticException e){
+            System.out.println("No se puede dividir para cero.");
+            System.out.println(e.getMessage());
+            e.printStackTrace();
+        }
+        catch(Exception e){
+        
+            System.out.println("Detectamos un Error comuniquese con un Servidor mas cercano");
+            System.out.println(e.getMessage());
+            e.printStackTrace();
+        }
+                finally{
+            //cerrar la conexion 
+            System.out.println("GRACIAS.");
+        }
+        
+        
+        
+        
+        
+        
     }
     
 }
