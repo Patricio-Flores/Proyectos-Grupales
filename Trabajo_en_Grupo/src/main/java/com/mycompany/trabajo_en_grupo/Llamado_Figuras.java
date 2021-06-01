@@ -28,7 +28,7 @@ public class Llamado_Figuras {
     public static void main(String[] args) {
        // Figuras Geometricas
         double Diagonalm=0,diagonalm=0,lado=0,b=0,bmayor=0, bmenor=0,apotema=0,num=0,altura=0,radio=0,pi=3.1416,diametro=0;
-        int opcion=0;
+        int opcion=0;   
         
         
         Scanner sc=new Scanner (System.in);
