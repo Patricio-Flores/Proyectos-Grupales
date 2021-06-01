@@ -25,8 +25,7 @@ public class Llamado_Figuras {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-       // Figuras
-       
+       // Figuras Geometricas
         double Diagonalm=0,diagonalm=0,lado=0,b=0,bmayor=0, bmenor=0,apotema=0,num=0,altura=0,radio=0,pi=3.1416,diametro=0;
         int opcion=0;
         
@@ -43,21 +42,15 @@ public class Llamado_Figuras {
         System.out.println("8. Poligono");
         System.out.println("selecciones la figura");
         opcion=sc.nextInt();
-      
-            
-        }
         switch(opcion){
-            
             case 1:
-                  
                 System.out.println("ingrese el lado ");
                 lado=sc.nextDouble();
                 Cuadrado c=new Cuadrado(lado);
                 System.out.println("El area del cuadrado es: "+c.area());
                 System.out.println("El area del cuadrado es: "+c.perimetro());
                 break;
-                
-               case 2:
+            case 2:
                 System.out.println("Ingrese la base: ");
                 b=sc.nextDouble();
                 System.out.println("Ingrese la altura: ");
